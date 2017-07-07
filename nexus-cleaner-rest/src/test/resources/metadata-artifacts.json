@@ -1,0 +1,10 @@
+[
+  {
+    "groupId": "com.github.eciuca.applications.gateway",
+    "artifactId": "eris-war"
+  },
+  {
+    "groupId": "com.github.eciuca.applications.gateway",
+    "artifactId": "gateway-war"
+  }
+]

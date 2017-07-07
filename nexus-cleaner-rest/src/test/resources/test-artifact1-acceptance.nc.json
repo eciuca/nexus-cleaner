@@ -1,0 +1,8 @@
+{
+  "artifact": {
+    "groupId": "group.id.one",
+    "artifactId": "artifact1"
+  },
+  "versionsToKeep": [ 1.2 ],
+  "environment": "acceptance"
+}

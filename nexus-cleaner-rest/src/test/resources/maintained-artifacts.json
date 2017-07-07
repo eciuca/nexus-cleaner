@@ -1,0 +1,24 @@
+{
+  "keepLast": 1,
+  "artifactMetadataList": [
+    {
+      "artifact": {
+        "groupId": "group.id.one",
+        "artifactId": "artifact1"
+      }
+    },
+    {
+      "artifact": {
+        "groupId": "group.id.two",
+        "artifactId": "artifact2"
+      }
+    },
+    {
+      "artifact": {
+        "groupId": "group.id.three",
+        "artifactId": "artifact3",
+        "keepLast": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.eciuca.tools.nexuscleaner</groupId>
+    <artifactId>nexus-cleaner-modules</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>nexus-cleaner-modules</name>
+
+    <scm>
+        <connection>scm:git:https://github.com/eciuca/nexus-cleaner.git</connection>
+        <developerConnection>scm:git:https://github.com/eciuca/nexus-cleaner.git</developerConnection>
+    </scm>
+    <modules>
+        <module>../nexus-cleaner-rest</module>
+    </modules>
+
+    <properties>
+        <reactive.microservice.bundle.version>0.1-0</reactive.microservice.bundle.version>
+        <bootique-logback.version>0.14</bootique-logback.version>
+        <env>dev</env>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>be.fluid-it.reactive-microservice.bundle</groupId>
+                <artifactId>reactive-microservice-bundle-bom</artifactId>
+                <version>${reactive.microservice.bundle.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.bootique.logback</groupId>
+                <artifactId>bootique-logback</artifactId>
+                <version>${bootique-logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.eciuca.tools.nexuscleaner</groupId>
+                <artifactId>nexus-cleaner-cfg</artifactId>
+                <classifier>${env}</classifier>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.21</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.odavid.maven.plugins</groupId>
+                <artifactId>mixin-maven-plugin</artifactId>
+                <version>0.1-alpha-39</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <mixins>
+                        <mixin>
+                            <groupId>be.fluid-it.reactive-microservice.bundle.mixins</groupId>
+                            <artifactId>jdk</artifactId>
+                            <version>0.1-0</version>
+                        </mixin>
+                    </mixins>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -18,7 +18,7 @@ import javax.annotation.Nullable;
 
 public class NexusCleanerModule extends ConfigModule {
 
-    public static final String NEXUS_CLEANER_CONFIG_IDENTIFIER = "nexus-cleaner";
+    public static final String NEXUS_CLEANER_CONFIG_IDENTIFIER = "nexusCleaner";
 
     @Override
     public void configure(Binder binder) {

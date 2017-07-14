@@ -3,7 +3,7 @@ vertx:
    server:
     port: 8080
 
-nexus-cleaner:
+nexusCleaner:
   name: 'Nexus cleaner'
   nexusConfig:
     host: 'localhost'

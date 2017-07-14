@@ -1,0 +1,16 @@
+vertx:
+  http:
+   server:
+    port: 8080
+
+nexus-cleaner:
+  name: 'Nexus cleaner'
+  nexusConfig:
+    host: 'localhost'
+    port: 8081
+    ssl: false
+    repositoriesPath: '/nexus/content/repositories/'
+    releasesRepositoryId: 'releases'
+    snapshotsRepositoryId: 'snapshots'
+    username: 'admin'
+    password: 'admin123'

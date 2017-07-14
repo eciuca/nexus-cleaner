@@ -3,7 +3,7 @@ package com.github.eciuca.tools.nexuscleaner.handlers;
 import com.github.eciuca.tools.nexuscleaner.config.NexusCleanerConfiguration;
 import com.github.eciuca.tools.nexuscleaner.config.NexusConfiguration;
 import com.github.eciuca.tools.nexuscleaner.domain.ArtifactMetadata;
-import com.github.eciuca.tools.nexuscleaner.domain.ArtifactMetadataManager;
+import com.github.eciuca.tools.nexuscleaner.ArtifactMetadataManager;
 import com.github.eciuca.tools.nexuscleaner.util.NexusUtil;
 import io.vertx.core.Handler;
 import io.vertx.core.json.Json;

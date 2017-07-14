@@ -18,6 +18,13 @@
             <groupId>be.fluid-it.reactive-microservice.bundle</groupId>
             <artifactId>reactive-microservice-bundle-core</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.eciuca.tools.nexuscleaner</groupId>
+            <artifactId>nexus-cleaner-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>

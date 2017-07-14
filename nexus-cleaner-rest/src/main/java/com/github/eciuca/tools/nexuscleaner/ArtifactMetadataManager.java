@@ -1,6 +1,8 @@
-package com.github.eciuca.tools.nexuscleaner.domain;
+package com.github.eciuca.tools.nexuscleaner;
 
 import com.github.eciuca.tools.nexuscleaner.config.NexusCleanerConfiguration;
+import com.github.eciuca.tools.nexuscleaner.domain.Artifact;
+import com.github.eciuca.tools.nexuscleaner.domain.ArtifactMetadata;
 import io.vertx.core.json.JsonObject;
 
 import java.io.File;

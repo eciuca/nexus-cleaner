@@ -13,6 +13,7 @@
         <developerConnection>scm:git:https://github.com/eciuca/nexus-cleaner.git</developerConnection>
     </scm>
     <modules>
+        <module>../nexus-cleaner-common</module>
         <module>../nexus-cleaner-rest</module>
     </modules>
 
@@ -35,12 +36,6 @@
                 <groupId>io.bootique.logback</groupId>
                 <artifactId>bootique-logback</artifactId>
                 <version>${bootique-logback.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.eciuca.tools.nexuscleaner</groupId>
-                <artifactId>nexus-cleaner-cfg</artifactId>
-                <classifier>${env}</classifier>
-                <version>1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
